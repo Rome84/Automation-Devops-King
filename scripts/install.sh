@@ -10,6 +10,11 @@ PACKER_VERSION="0.10.2"
 && ssh-keygen -f /home/ubuntu/.ssh/mykey -N '' \
 && chown -R ubuntu:ubuntu /home/ubuntu/.ssh
 
+# walk around  dependency problems for 18.4
+sudo dpkg-reconfigure libc6
+sudo dpkg --configure libssl1.1
+sudo dpkg-reconfigure libssl1.1
+
 # install packages
 sudo apt-get -y update
 sudo apt-get -y install docker.io ansible unzip
