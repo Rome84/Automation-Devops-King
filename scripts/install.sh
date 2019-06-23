@@ -1,7 +1,7 @@
 #!/bin/bash
 set -x
 
-TERRAFORM_VERSION="0.11.11"
+TERRAFORM_VERSION="0.12.2"
 PACKER_VERSION="0.10.2"
 
 # create new ssh key
