@@ -13,7 +13,6 @@ PACKER_VERSION="0.10.2"
 # walk around  dependency problems for 18.4
 sudo dpkg-reconfigure libc6
 sudo dpkg --configure libssl1.1
-sudo dpkg-reconfigure libssl1.1
 
 # install packages
 sudo apt-get -y update
