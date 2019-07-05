@@ -1,5 +1,5 @@
 # Automation-Devops-King
-* Ubuntu box with the tools needed for DevOps Engineers
+* A Box with the tools needed for DevOps
 
 # tools included
 * Terraform 11.11
@@ -12,7 +12,4 @@
 * Python 2 X
 * curl
 * wget
-
 OS = linux
-
-
