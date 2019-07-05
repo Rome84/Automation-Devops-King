@@ -10,17 +10,9 @@
 * Python3X
 * Kubectl
 * Python 2 X
-* Botocore
-* Development tools
-* CLI tool
-* free
-* Linuxlogo
-* figlet
-* neofetch
-* pip3
 * curl
 * wget
 
-OS = Ubuntu 18
+OS = linux
 
 
