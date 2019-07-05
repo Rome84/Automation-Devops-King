@@ -21,9 +21,9 @@ if [[ $? == 127 ]]; then
     python get-pip.py
     python3 get-pip.py
 fi
-# install awscli and ebclis
-sudo apt-get install awscli -y
-sudo apt-get install awsebcli -y
+# install awscli and ebcli
+pip install -U awscli
+pip install -U awsebcli
 
 #terraform
 T_VERSION=$(terraform -v | head -1 | cut -d ' ' -f 2 | tail -c +2)
@@ -49,29 +49,6 @@ curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add
 echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /etc/apt/sources.list.d/kubernetes.list
 sudo apt-get update
 sudo apt-get install -y kubectl
-
-# Other Linux Fancy Stuff
-sudo add-apt-repository ppa:dawidd0811/neofetch
-sudo apt-get -y install neofetch
-sudo apt-get -y install sysvbanner
-sudo apt-get -y install linuxlogo
-
-# Install Python3 and Boto
-sudo apt-get -y install python3-pip -y
-sudo python -m pip install boto3
-sudo pip install --upgrade pip
-
-
-# Using APT you can install the tools with the following RPM packages
-sudo apt-get -y install lsof*
-sudo apt-get -y install iotop*
-sudo apt-get -y install htop*
-sudo apt-get -y install sysstat
-sudo apt-get -y install toilet && sudo apt-get -y install figlet
-sudo apt-get -y install tree
-
-sudo echo 'echo "ROME WELCOME YOU TO THE WORLD OF DEVOPS"' >> ~/.bashrc
-sudo apt-get update -y
 
 # clean up
 apt-get clean
