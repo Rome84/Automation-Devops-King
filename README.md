@@ -12,4 +12,4 @@
 * Python 2 X
 * curl
 * wget
-OS = linux
+* OS = linux
